@@ -1,0 +1,204 @@
+Hallo,
+for some time I try to get my Nvidia card running, often I failed.
+Now I had a little success.
+The egpu is now reconginzed by the system
+
+But the starting procedure ends up with the blurred starting screen
+
+Help now would be much appreciated.
+I add the installation log
+
+Friedhelms-MacBook-Pro:~ friedhelmott$ bash <(curl -s https://raw.githubusercontent.com/learex/macOS-eGPU/master/macOS-eGPU.sh)
+
+
+
+macOS-eGPU.sh (v1.6)
+
+USAGE TERMS of macOS-eGPU.sh
+#   1. You may use this script for personal use.
+#   2. You may continue development of this script at it's GitHub homepage.
+#   3. You may not redistribute this script or portions thereof from outside of it's GitHub homepage without explicit written permission.
+#   4. You may not compile, assemble or in any other way make the source code unreadable by a human.
+#   5. You may not implement this script or portions thereof into other scripts and/or applications without explicit written permission.
+#   6. You may not use this script, or portions thereof, for any commercial purposes.
+#   7. You accept the license terms of all downloaded and/or executed content, even content that has only indirectly been been downloaded and/or executed by macOS-eGPU.sh.
+#
+#   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+#   THE SOFTWARE.
+
+Do you agree with the license terms of the script and wish to continue?
+[y]es [n]o : Y
+
+Continuation requires acceptance of the license terms.
+
+
+
+
+Interrupt...
+   cleaning system                                                        [done]
+The script has failed.
+Nothing has been changed.
+
+Friedhelms-MacBook-Pro:~ friedhelmott$ caro
+-bash: caro: command not found
+Friedhelms-MacBook-Pro:~ friedhelmott$ macos-egpu
+-bash: macos-egpu: command not found
+Friedhelms-MacBook-Pro:~ friedhelmott$ bash <(curl -s https://raw.githubusercontent.com/learex/macOS-eGPU/master/macOS-eGPU.sh)
+
+
+
+macOS-eGPU.sh (v1.6)
+
+USAGE TERMS of macOS-eGPU.sh
+#   1. You may use this script for personal use.
+#   2. You may continue development of this script at it's GitHub homepage.
+#   3. You may not redistribute this script or portions thereof from outside of it's GitHub homepage without explicit written permission.
+#   4. You may not compile, assemble or in any other way make the source code unreadable by a human.
+#   5. You may not implement this script or portions thereof into other scripts and/or applications without explicit written permission.
+#   6. You may not use this script, or portions thereof, for any commercial purposes.
+#   7. You accept the license terms of all downloaded and/or executed content, even content that has only indirectly been been downloaded and/or executed by macOS-eGPU.sh.
+#
+#   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+#   THE SOFTWARE.
+
+Do you agree with the license terms of the script and wish to continue?
+[y]es [n]o : y
+
+
+
+The script will soon close (kill) all programs.
+Please abort the script now should you wish to do it manually and save your work.
+Please do not, under any circumstances abort the script later during the execution.
+This might break your system.
+
+The script might automatically reboot the system after successful execution.
+To safely abort the script now, press ^C.
+Continuing in
+15..14..13..12..11..10..9..8..7..6..5..4..3..2..1..0
+
+
+
+
+
+macOS-eGPU.sh (v1.6)
+
+
+--- installing short command ---
+   elevating privileges
+   Password:
+   checking for elevated privileges                                         [OK]
+now the script can be used like this (internet may be required):
+macos-egpu [parameters]
+7..6..5..4..3..2..1..0
+--- short command end ---
+
+--- restarting ---
+
+
+
+
+
+
+
+macOS-eGPU.sh (v1.6)
+
+Accept license terms...                                                   [done]
+Killing all other running programs...                                       [OK]
+Internet connection established...                                         [YES]
+Fetching system information...
+   macOS info                                                             [done]
+   system integrity protection                                            [done]
+   thunderbolt version                                                    [done]
+   GPU information                                                        [done]
+   installed eGPU software                                                [done]
+   installed patches                                                      [done]
+   installed programs                                                     [done]
+Setting internal switches...
+Automatic eGPU information fetching...
+   locking script execution                                               [done]
+   preparing secure eGPU connection                                       [done]
+   waiting 20 seconds for user to connect eGPU
+   20..19..18..17..16..15..14..13..12..11..10..9..8..7..6..5..4..3..2..1..0
+   fetching eGPU information                                              [done]
+   preparing secure eGPU disconnection                                    [done]
+   waiting 20 seconds for user to disconnect eGPU
+   20..19..18..17..16..15..14..13..12..11..10..9..8..7..6..5..4..3..2..1..0
+   stetting switches                                                      [done]
+   opening script execution lock                                          [done]
+Fetching CUDA needs...
+   fetching CUDA requiring apps list                                      [done]
+   preparing matching                                                     [done]
+   matching                                                               [done]
+Checking for incompatibilies and up to date software...
+   NVIDIA drivers                                            [install scheduled]
+   NVIDIA eGPU enabler                                      [skip, incompatible]
+   AMD legacy drivers                                                     [skip]
+   T82 unblocker                                                          [skip]
+   NVIDIA dGPU deactivator                                                [skip]
+   macOS 10.13.4/.5 NVIDIA patch                            [skip, incompatible]
+   macOS 10.13.4+ thunderbolt 1/2 unlock                     [install scheduled]
+   CUDA software
+      CUDA drivers                                                        [skip]
+      CUDA developer driver                                               [skip]
+      CUDA toolkit                                                        [skip]
+      CUDA samples                                                        [skip]
+   thunderbolt daemon                                                     [skip]
+   IO PCIE Tunnelled patch                                   [install scheduled]
+Checking if SIP is sufficently disabled...                                  [OK]
+
+
+Download external content...
+--- NVIDIA drivers ---
+######################################################################## 100,0%
+
+
+Checking for elevated privileges...
+
+
+Uninstalling...
+Installing...
+   NVIDIA driver                                                          [done]
+   IO PCIE Tunnelled patch                                                [done]
+   Thunderbolt 1/2 unlock                                                 [done]
+Patching...
+deactivating auto-updates...
+
+
+Finish...
+   cleaning system                                                        [done]
+Rebuilding caches
+   kext cache                                                             [done]
+   system cache                                                           [done]
+A reboot will soon be performed...
+5..4..3..2..1..0
+reboot: / is busy updating, waiting for lock (this might take approx 15-30s)...
+reboot: / is busy updating; waiting for lock
+
+Friedhelms-MacBook-Pro:~ friedhelmott$ 
+  [01.08.2019, 07:02:53 Wiederhergestellt]
+Last login: Thu Aug  1 07:02:52 on console
+Restored session: Do  1 Aug 2019 07:02:14 PDT
+Friedhelms-MacBook-Pro:~ friedhelmott$ 
+  [01.08.2019, 07:15:58 Wiederhergestellt]
+Last login: Thu Aug  1 07:15:57 on console
+Friedhelms-MacBook-Pro:~ friedhelmott$ 
+  [01.08.2019, 07:36:08 Wiederhergestellt]
+Last login: Thu Aug  1 07:36:07 on console
+Friedhelms-MacBook-Pro:~ friedhelmott$ 
+
+
+
+
+
+Any suggestions?
+I am looking forward hearing from you
